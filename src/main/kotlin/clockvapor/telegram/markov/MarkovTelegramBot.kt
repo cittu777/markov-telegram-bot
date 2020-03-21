@@ -35,7 +35,7 @@ class MarkovTelegramBot(private val token: String, private val dataPath: String)
 
     fun run() {
         val bot = bot {
-            this.token = this@MarkovTelegramBot.token
+            this.token = this@absolutemadprova1bot.token
             logLevel = HttpLoggingInterceptor.Level.NONE
             dispatch {
                 addHandler(object : Handler({ bot, update -> handleUpdate(bot, update) }) {
